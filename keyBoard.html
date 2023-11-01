@@ -1,0 +1,14 @@
+<input type="text" name="input" id="input">
+<p id="output"></p>
+
+<script>
+    const inputElement = document.getElementById("input");
+
+    inputElement.addEventListener("keydown", function (event) {
+        const keyPressed = event.key;
+        console.log(keyPressed);
+        const outputElement = document.getElementById('output');
+
+        outputElement.textContent = `Your Pressed ${keyPressed} `;
+    });
+</script>

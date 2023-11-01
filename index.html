@@ -1,0 +1,45 @@
+<h1 id="h1"></h1>
+<h2 id="title">
+    Hello World !
+</h2>
+
+<input type="number" id="num1" value="">
+<input type="number" id="num2" value="">
+<button onclick="addHandler()">Add !</button>
+<p id="result">Result !</p>
+
+
+
+<button onclick="handler()">Change !</button>
+
+<script>
+
+    // const heading = document.getElementById('h1');
+
+    // const name = "Selvaraj !";
+    // heading.textContent = `Welcome ${name}`;
+    // console.log(heading.textContent);
+
+    var heading2 = document.getElementById("title");
+    console.log(heading2.textContent);
+    // heading2.textContent = "Bye World !";
+
+    const handler = () => {
+        heading2.textContent = "Bye World !"
+    }
+
+    var result = document.getElementById('result');
+
+
+    const addHandler = () => {
+        var box1 = document.getElementById("num1");
+        var box2 = document.getElementById("num2");
+        const total = Number(box1.value) + Number(box2.value);
+        result.textContent = total
+    }
+
+
+
+    // const h2 = handler();
+    // console.log(h2)
+</script>
